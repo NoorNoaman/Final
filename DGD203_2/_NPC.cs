@@ -73,6 +73,8 @@ public class _NPC
                             {
                                 Game.PlayerDied();
                                 exit();
+                            }
+                            break;
                         case "2":
                             if (heatlh == 2)
                             {
@@ -134,5 +136,4 @@ public class _NPC
             }
         }
     }
-}
 }
