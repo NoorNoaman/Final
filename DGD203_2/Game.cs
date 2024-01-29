@@ -98,8 +98,7 @@ namespace DGD203_2
             _playerName = Console.ReadLine();
 
             Console.WriteLine($"Hi {_playerName}, In this game, you have a mission of saving Dobby\nHe accidently brought himself to our human world that lacks so much magic");
-            Console.WriteLine(" it affected his mental health and he went rogue biting people");
-            Console.WriteLine(" as he is made of magic himslef");
+            Console.WriteLine("it affected his mental health and he went rogue biting people as he is made of magic himslef");
             Console.WriteLine("This is where you come in, you need to kill him so he can go back to his world.\nHowever, you need a special bomb that Raven has, find her and complete your mission.\nIf you decide to directly go to him he will kill you.\n");
         }
 
