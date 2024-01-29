@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Inventory
 {
@@ -33,6 +33,7 @@ public class Inventory
 public enum Item
 {
     Charm,
+    Kidney,
     Rune,
     Bomb
 }
