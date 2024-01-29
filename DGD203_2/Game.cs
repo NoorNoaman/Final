@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 
 namespace DGD203_2
 {
@@ -86,16 +86,21 @@ namespace DGD203_2
 
             // _playerName may be null. It would be a good idea to put a check here.
             Player = new Player(_playerName, _loadedItems);
-            Console.WriteLine("You have " + Player.Health.ToString() +" lives\n");
+            Console.WriteLine("Your have " + Player.Health.ToString() + " lives\n");
+            Console.WriteLine("Here are the commands to help you out :\n\n");
+            Console.WriteLine("w: Go up\r\ns: Go down\r\na: Go left\r\nd: Go right\r\nwhere : Your current coordnts\r\nwho : In case you hit your head and forget who you are\r\nclear : Clear the screen\r\ntake : Take item\r\ninventory : Open Inventory\r\nload : Load saved game\r\nsave : Save current game\r\nexit : Exit the game\"\n\n");
         }
 
         private void GetPlayerName()
         {
-            Console.WriteLine("Welcome to the Sherlock's Realm!");
-            Console.WriteLine("What do you go by?");
+            Console.WriteLine("Welcome to Town!\n");
+            Console.WriteLine("What shall we call you?\n");
             _playerName = Console.ReadLine();
 
-            Console.WriteLine($"Hi {_playerName}, In This Adventure Your Goal is to kill the Goblin\n\nHowever, you need to get the item that helps you achieve that.\n\nIf you decide to visit the goblin for fun you WILL die. Have Fun <3");
+            Console.WriteLine($"Hi {_playerName}, In this game, you have a mission of saving Dobby\n\n He accidently brought himself to our human world that lacks so much magic\n");
+            Console.WriteLine(" it affected his mental health and he went rogue biting people\n");
+            Console.WriteLine(" as he is made of magic himslef\n");
+            Console.WriteLine(" This is where you come in, you need to kill him so he can go back to his world.\n\n However, you need a special bomb that Raven has, find her and complete your mission.\n\n If you decide to directly go to him he will kill you.\n");
         }
 
         private void InitializeGameConditions()
@@ -127,7 +132,7 @@ namespace DGD203_2
         public void PlayerDied()
         {
 
-            Console.WriteLine("You got murdered...");
+            Console.WriteLine("You died...");
             exiting();
         }
 
@@ -220,7 +225,7 @@ namespace DGD203_2
                         if (Player.HasBomb(Item.Bomb))
                         {
                             Player.DropItem(Item.Bomb);
-                            Console.WriteLine($"Finally, you killed Gollum, serves him right, thanks { _playerName}" );
+                            Console.WriteLine($"Finally, he is back to where he belongs, thanks {_playerName}");
                             exiting();
                         }
                         else
@@ -230,7 +235,7 @@ namespace DGD203_2
                     }
                     else
                     {
-                        Console.WriteLine("Command not recognized. Please type 'help' for a list of available commands");
+                        Console.WriteLine("Command not recognized. Please type 'hep' for a list of available commands");
                     }
 
                     break;
@@ -246,7 +251,7 @@ namespace DGD203_2
 
         public void exiting()
         {
-            Console.WriteLine("Thanks for trying out our game, till next time <3!");
+            Console.WriteLine("Hope you enjoyed, till next time.!");
             _gameRunning = false;
         }
 
@@ -337,14 +342,14 @@ w: Go up
 s: Go down
 a: Go left
 d: Go right
-Where: Your current coordinates
-Who: Your name
-Clear: Clear the screen
-Take: Take item
-Inventory: Open Inventory
-Load: Load saved game
-Save: Save current game
-Exit: Exit the game";
+where : Your current coordnts
+who : In case you hit your head and forget who you are
+clear : Clear the screen
+take : Take item
+inventory : Open Inventory
+load : Load saved game
+save : Save current game
+exit : Exit the game";
 
         }
 
