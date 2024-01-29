@@ -90,26 +90,26 @@ public class Map
         _locations[0] = goblin;
 
         Vector2 tavernLocation = new Vector2(-1, -1);
-        Location Tavern = new Location("The Giant's ", "I advice you not to stay here for long, it's where the big hairy dudes fight", LocationType.Tavern, tavernLocation);
-        _locations[1] = Tavern ;
+        Location tavern = new Location("The Giant's ", "I advice you not to stay here for long, it's where the big hairy dudes fight", LocationType.Tavern, tavernLocation);
+        _locations[1] = tavern ;
 
-        Vector2 Location = new Vector2(-2, -2);
+        Vector2 ravenLocation = new Vector2(-2, -2);
         List<Item> ravenItem = new List<Item>();
         ravenItem.Add(Item.Bomb);
-        Location Raven = new Location(&"\nRaven\n", "This Raven looks exactly like the one in Teen Titans, lucky you" {_playerName}"..." LocationType.npc, RavenLocation, ravenItem);
-        _locations[2] = Raven;
+        Location raven = new Location("\nRaven\n", "This Raven looks exactly like the one in Teen Titans, lucky you ...", LocationType.npc, ravenLocation, ravenItem);
+        _locations[2] = raven;
 
         Vector2 goreStreetLocation = new Vector2(-1, 1);
-        List<Item> goretItem = new List<Item>();
-        goretItem.Add(Item.Kidney);
-        Location Gore_Street = new Location("Gore ", "You might want to hold your breath, people here take pleasure from watching dead bodies rot.\n\n However, if you go down three blocks then west, you will find what you are looking for.", LocationType.Street, goreStreetLocation, goreItem);
-        _locations[3] = Gore_Street;
+        List<Item> goreItem = new List<Item>();
+        goreItem.Add(Item.Kidney);
+        Location gore_Street = new Location("Gore ", "You might want to hold your breath, people here take pleasure from watching dead bodies rot.\n\n However, if you go down three blocks then west, you will find what you are looking for.", LocationType.Street, goreStreetLocation, goreItem);
+        _locations[3] = gore_Street;
 
         Vector2 osamaLocation = new Vector2(1, -2);
         List<Item> osamaItem = new List<Item>();
         osamaItem.Add(Item.Rune);
-        Location Osama = new Location("O'Sam Ben Ladin's", "He says he is a pilot.", LocationType.Office, osamaLocation, osamaItem);
-        _locations[4] = Osama;
+        Location osama = new Location("O'Sam Ben Ladin's", "He says he is a pilot.", LocationType.Office, osamaLocation, osamaItem);
+        _locations[4] = osama;
     }
 
     public void CheckForLocation(Vector2 coordinates)
