@@ -33,8 +33,8 @@ public class _NPC
         Game = new Game();
         Map = new Map(Game, 5, 5);
         heatlh = Player.Health;
-        Console.WriteLine("Hi " + name + " I am Raven, I was sent by my team to help you out...poor Dobby\n\n" +
-            "I hear that Dobby has gone rogue and needs to be sent back to his land by a wise human. So let's see how wise you can get....");
+        Console.WriteLine("Hi" + name + " I am Raven, I was sent by my team to help you out...poor Dobby\n" +
+            "I hear that he has gone rogue and needs to be sent back to his land by a wise human. So let's see how wise can you get....\n");
         question();
         while (CanTake)
         {
