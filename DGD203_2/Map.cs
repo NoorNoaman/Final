@@ -1,4 +1,4 @@
-﻿using DGD203_2;
+using DGD203_2;
 using System.Numerics;
 
 public class Map
@@ -62,7 +62,7 @@ public class Map
 
         if (!CanMoveTo(newXCoordinate, newYCoordinate))
         {
-            Console.WriteLine("Can't go that way");
+            Console.WriteLine("You can't go that way");
             return;
         }
 
@@ -86,30 +86,30 @@ public class Map
         _locations = new Location[5];
 
         Vector2 goblinLocation = new Vector2(-2, 2);
-        Location goblin = new Location("Goblin's HideOut", "\nwhere he hides from justice and law", LocationType.Combat, goblinLocation);
+        Location goblin = new Location("Dobby's Cave", "\njackpot!", LocationType.Combat, goblinLocation);
         _locations[0] = goblin;
 
-        Vector2 storeLocation = new Vector2(-1, -1);
-        Location Store = new Location("Sherlock's ", "You walk in to find a sign that says he is in the street south west smoking his pipe, as usual", LocationType.Office, storeLocation);
-        _locations[1] = Store ;
+        Vector2 tavernLocation = new Vector2(-1, -1);
+        Location Tavern = new Location("The Giant's ", "I advice you not to stay here for long, it's where the big hairy dudes fight", LocationType.Tavern, tavernLocation);
+        _locations[1] = Tavern ;
 
-        Vector2 SherlockLocation = new Vector2(-2, -2);
-        List<Item> sherlockItem = new List<Item>();
-        sherlockItem.Add(Item.Bomb);
-        Location Sherlock = new Location("\nSherlock\n", "busy puffing clouds, I think his arrogance will trouble our quest, I hope not...", LocationType.npc, SherlockLocation, sherlockItem);
-        _locations[2] = Sherlock;
+        Vector2 Location = new Vector2(-2, -2);
+        List<Item> ravenItem = new List<Item>();
+        ravenItem.Add(Item.Bomb);
+        Location Raven = new Location(&"\nRaven\n", "This Raven looks exactly like the one in Teen Titans, lucky you" {_playerName}"..." LocationType.npc, RavenLocation, ravenItem);
+        _locations[2] = Raven;
 
-        Vector2 bakerStreetLocation = new Vector2(-1, 1);
-        List<Item> streetItem = new List<Item>();
-        streetItem.Add(Item.Charm);
-        Location Baker_Street = new Location("Baker ", "The street that overheard every crime to ever exist,", LocationType.Street, bakerStreetLocation, streetItem);
-        _locations[3] = Baker_Street;
+        Vector2 goreStreetLocation = new Vector2(-1, 1);
+        List<Item> goretItem = new List<Item>();
+        goretItem.Add(Item.Kidney);
+        Location Gore_Street = new Location("Gore ", "You might want to hold your breath, people here take pleasure from watching dead bodies rot.\n\n However, if you go down three blocks then west, you will find what you are looking for.", LocationType.Street, goreStreetLocation, goreItem);
+        _locations[3] = Gore_Street;
 
-        Vector2 mycroftLocation = new Vector2(1, -2);
-        List<Item> mycroftItem = new List<Item>();
-        mycroftItem.Add(Item.Rune);
-        Location Mycroft = new Location("Mycroft's", "Surprisingly the saner of the two", LocationType.Office, mycroftLocation, mycroftItem);
-        _locations[4] = Mycroft;
+        Vector2 osamaLocation = new Vector2(1, -2);
+        List<Item> osamaItem = new List<Item>();
+        osamaItem.Add(Item.Rune);
+        Location Osama = new Location("O'Sam Ben Ladin's", "He says he is a pilot.", LocationType.Office, osamaLocation, osamaItem);
+        _locations[4] = Osama;
     }
 
     public void CheckForLocation(Vector2 coordinates)
@@ -120,10 +120,20 @@ public class Map
         {
             if (location.Type == LocationType.Combat)
             {
-                Console.WriteLine("Here is the goblin!! If you have your weapon type 'bomb'!!");
+                Console.WriteLine("You found Dobby!! Help him out of his misery, type 'bomb' if you have your weapon!!");
                 Combat combat = new Combat(_theGame);
             }
             else if (location.Type == LocationType.Office)
+            {
+                Console.WriteLine($"You are in {location.Name} {location.Type}");
+                Console.WriteLine(location.Discription);
+
+                if (HasItem(location))
+                {
+                    Console.WriteLine($"There is a {location.ItemsOnLocation[0]} here");
+                }
+            }
+            else if (location.Type == LocationType.Tavern)
             {
                 Console.WriteLine($"You are in {location.Name} {location.Type}");
                 Console.WriteLine(location.Discription);
@@ -145,8 +155,8 @@ public class Map
             }
             else if (location.Type == LocationType.npc)
             {
-                Console.WriteLine("You found Sherlock");
-                Console.WriteLine("Type 'talk' if you want to know what he has in store for you");
+                Console.WriteLine("You found Raven");
+                Console.WriteLine("Type 'talk'");
 
             }
         }
@@ -203,7 +213,7 @@ public class Map
             }
         }
 
-        Console.WriteLine("There is nothing to take here!");
+        Console.WriteLine("There is nothing to take here.");
     }
 
     public void RemoveItemFromLocation(Item item)
