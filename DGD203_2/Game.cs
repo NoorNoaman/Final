@@ -195,7 +195,7 @@ namespace DGD203_2
                     Console.Clear();
                     break;
                 case "who":
-                    Console.WriteLine($"Who are you? Not Batnman, just {Player.Name}, Bummer.");
+                    Console.WriteLine($"You are asking who are you? Not Batnman, just {Player.Name}, Bummer.");
                     break;
                 case "take":
                     if (_gameMap.GetCoordinates() == nPC.npcLocation)
