@@ -102,7 +102,7 @@ public class Map
         Vector2 goreStreetLocation = new Vector2(-1, 1);
         List<Item> goreItem = new List<Item>();
         goreItem.Add(Item.Kidney);
-        Location gore_Street = new Location("Gore ", "You might want to hold your breath, people here take pleasure from watching dead bodies rot.\n\n However, if you go down three blocks then west, you will find what you are looking for.", LocationType.Street, goreStreetLocation, goreItem);
+        Location gore_Street = new Location("Gore", "You might want to hold your breath, people here take pleasure from watching dead bodies rot.\nHowever, if you go down three blocks then west, you will find what you are looking for.", LocationType.Street, goreStreetLocation, goreItem);
         _locations[3] = gore_Street;
 
         Vector2 osamaLocation = new Vector2(1, -2);
