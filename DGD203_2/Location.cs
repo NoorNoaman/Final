@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Location
@@ -51,7 +51,7 @@ public enum LocationType
 {
     Street,
     Office,
-    Store,
+    Tavern,
     Combat,
     npc
 }
