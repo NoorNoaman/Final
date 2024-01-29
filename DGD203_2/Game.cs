@@ -97,10 +97,10 @@ namespace DGD203_2
             Console.WriteLine("What shall we call you?\n");
             _playerName = Console.ReadLine();
 
-            Console.WriteLine($"Hi {_playerName}, In this game, you have a mission of saving Dobby\n\n He accidently brought himself to our human world that lacks so much magic\n");
-            Console.WriteLine(" it affected his mental health and he went rogue biting people\n");
-            Console.WriteLine(" as he is made of magic himslef\n");
-            Console.WriteLine(" This is where you come in, you need to kill him so he can go back to his world.\n\n However, you need a special bomb that Raven has, find her and complete your mission.\n\n If you decide to directly go to him he will kill you.\n");
+            Console.WriteLine($"Hi {_playerName}, In this game, you have a mission of saving Dobby\nHe accidently brought himself to our human world that lacks so much magic");
+            Console.WriteLine(" it affected his mental health and he went rogue biting people");
+            Console.WriteLine(" as he is made of magic himslef");
+            Console.WriteLine("This is where you come in, you need to kill him so he can go back to his world.\nHowever, you need a special bomb that Raven has, find her and complete your mission.\nIf you decide to directly go to him he will kill you.\n");
         }
 
         private void InitializeGameConditions()
