@@ -1,4 +1,4 @@
-﻿using DGD203_2;
+using DGD203_2;
 using System;
 
 public class Player
