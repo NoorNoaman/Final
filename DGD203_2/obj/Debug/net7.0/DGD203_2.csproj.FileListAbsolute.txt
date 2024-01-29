@@ -1,0 +1,14 @@
+D:\New folder\UniYear2\C#\DGD203_2\bin\Debug\net7.0\DGD203_2.exe
+D:\New folder\UniYear2\C#\DGD203_2\bin\Debug\net7.0\DGD203_2.deps.json
+D:\New folder\UniYear2\C#\DGD203_2\bin\Debug\net7.0\DGD203_2.runtimeconfig.json
+D:\New folder\UniYear2\C#\DGD203_2\bin\Debug\net7.0\DGD203_2.dll
+D:\New folder\UniYear2\C#\DGD203_2\bin\Debug\net7.0\DGD203_2.pdb
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\DGD203_2.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\DGD203_2.AssemblyInfoInputs.cache
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\DGD203_2.AssemblyInfo.cs
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\DGD203_2.csproj.CoreCompileInputs.cache
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\DGD203_2.dll
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\refint\DGD203_2.dll
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\DGD203_2.pdb
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\DGD203_2.genruntimeconfig.cache
+D:\New folder\UniYear2\C#\DGD203_2\obj\Debug\net7.0\ref\DGD203_2.dll
